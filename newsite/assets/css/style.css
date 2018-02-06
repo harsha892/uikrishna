@@ -15,7 +15,7 @@
 
     .app_nav {
         box-shadow: 0px 0px 6px 0px #c7c7c7;
-        border-top: 5px solid #74afda;
+        border-top: 5px solid #01aaef;
         position: relative;
     }
 
@@ -24,7 +24,7 @@
         position: absolute;
         width: 100%;
         height: 3px;
-        background: #494f7d;
+        background: #095c84;
         top: 0;
         left: 0;
     }
