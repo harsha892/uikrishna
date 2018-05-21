@@ -1050,7 +1050,28 @@ img {
 .owl-theme .owl-dots .owl-dot:focus {
   outline: none;
 }
-
+.testimonials .item{
+  padding: 50px 30px;
+background: #fff;
+text-align: center;
+-webkit-box-shadow: 0 0 5px #eee;
+box-shadow: 0 0 5px #eee;
+margin-bottom: 30px;
+line-height: 27px;
+overflow: hidden;
+position: relative;
+min-height: 470px;
+}
+.testimonials .item h5{
+  font-family: 'Poppins', sans-serif;
+margin-top: 20px;
+padding-bottom: 30px;
+position: relative;
+font-size: 14.5px;
+text-transform: uppercase;
+letter-spacing: 2px;
+color: #333;
+}
 /*---------------------------------------
   13. BLOG                
 -----------------------------------------*/
