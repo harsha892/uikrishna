@@ -45,9 +45,6 @@ ul,ol {
   padding: 0;
   margin: 0;
 }
-li {
-  list-style: none;
-}
 a {
   color:#212121;
 }
@@ -72,6 +69,10 @@ img {
 .sections {
   padding: 120px 0;
   text-align: center;
+}
+.sections.page-section{
+  padding: 60px 0;
+  text-align: unset;
 }
 
 /* TITLE */
@@ -393,7 +394,13 @@ img {
 .navbar-toggle .icon-bar {
   background: #FFF;
 }
-
+.page-navbar{
+  box-shadow: 0 0 13px #ddd;
+  padding: 20px 0;
+}
+.page-navbar .navbar-brand{
+  padding: 5px 15px;
+}
 /*---------------------------------------
   4. HEADER                
 -----------------------------------------*/
@@ -537,6 +544,9 @@ img {
   margin: 0 auto;
   float: none;
 }
+.page-section .about-con{
+  text-align: unset;
+}
 .about-con h4 {
   text-transform: uppercase;
   color: #333;
@@ -566,9 +576,6 @@ img {
   background: #f2f4ec;
   padding: 120px 0 90px 0;
 }
-.services.work{
-  background: #fff;
-}
 .services .item {
   padding: 50px 30px;
   background: #fff;
@@ -579,7 +586,7 @@ img {
   line-height: 27px;
   overflow: hidden;
   position: relative;
-  min-height: 415px;
+  min-height: 500px;
 }
 .services .icon,
 .services i  {
@@ -625,7 +632,6 @@ img {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 .moving-border div {
@@ -633,7 +639,6 @@ img {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
 }
 .item:hover .moving-border::before,
 .item:hover .moving-border::after,
@@ -715,6 +720,7 @@ img {
 -----------------------------------------*/
 .work {
   padding: 120px 0 110px 0;
+  background: #f2f4ec;
 }
 .work .filter-work {
   margin: 0 auto;
@@ -1088,6 +1094,7 @@ color: #333;
   padding: 40px;
   overflow: hidden;
   position: relative;
+  min-height: 330px;
 }
 .blog-item a:focus {
   color: #111;
