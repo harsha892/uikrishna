@@ -4,1003 +4,502 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/bootstrap.min.js">
-    <link rel="stylesheet" href="js/jquery.js">
-    <link rel="stylesheet" href="js/popper.js">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <title>Inextgen</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
-        crossorigin="anonymous"></script>
-    <title>Inextgenit</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://maps.googleapis.com/maps/api/js">
+    </script>
 </head>
 
 <body>
-    <header>
-        <div class="top_nav d-none d-md-block" style="background: #2A2A2A; font-size: 12px;">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="d-flex justify-content-between  p-3">
-                            <div class="d-flex text-light">
-                                <p class="mr-3 mb-0 font-weight-bold">Welcome To Proffesional Consulting Agency</p>
-                                <p class="mr-3 mb-0 font-weight-bold">
-                                    <i class="fas fa-phone mr-2"></i>(+123)4567890</p>
-                                <p class="mr-3 mb-0 font-weight-bold">
-                                    <i class="fas fa-envelope mr-2"></i>info@inextgenit.com</p>
-                            </div>
-                            <div class="text-light">
-                                <i class="fab fa-facebook-f mr-3"></i>
-                                <i class="fab fa-twitter mr-3"></i>
-                                <i class="fab fa-instagram mr-3"></i>
-                                <i class="fab fa-pinterest-square mr-3"></i>
-                            </div>
-                        </div>
+    <header class="bg-dark" id="home">
+        <div class="top_nav px-md-5">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark px-5">
+                <div class="container">
+                    <a href="" class="navbar-brand text-white">
+                        <strong>Inext
+                            <span class="text-primary">Gen</span>
+                        </strong>
+                    </a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarLink" aria-controls="navbarLink" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarLink">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a href="#home" class="nav-link text-white mr-4">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#aboutus" class="nav-link text-white mr-4">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#ourservices" class="nav-link text-white mr-4">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#industries" class="nav-link text-white mr-4">Industries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link text-white mr-4">Contact</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                            <button class="nav-link bg-primary text-white btn p-0 px-3 py-1">RegisterNow</button>
+                        </li> -->
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
-        <div class="header_navbar">
+        <div class="header_section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <nav class="navbar navbar-expand-lg text-dark navbar-dark p-4">
-                            <a href="#" class="navbar-brand">
-                                <img src="img/logo.png" alt="" class="img-fluid">
-                            </a>
-                            <button class="navbar-toggler text-danger" type="button" data-toggle="collapse" data-target="#headerNav" aria-controls="headerNav"
-                                aria-expanded="false">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse " id="headerNav">
-                                <ul class="navbar-nav menu mb-0 ml-md-auto  text-dark">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Home
-                                            <i class="fas fa-caret-down ml-2"></i>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Services
-                                            <i class="fas fa-caret-down ml-2"></i>
-                                        </a>
-                                        <ul class="sub_menu mb-0">
-                                            <li class="first">
-                                                <a href="application-development" title="Application Development" class="app-dvl">Application Development</a>
-                                            </li>
-                                            <li>
-                                                <a href="application-maintenance" title="Application Maintenance" class="app-mnt">Application Maintenance</a>
-                                            </li>
-                                            <li>
-                                                <a href="application-modernization" title="Application Modernization" class="app-modz">Application Modernization</a>
-                                            </li>
-                                            <li>
-                                                <a href="testing-qa" title="Testing &amp; QA" class="testing-qa">Testing &amp; QA</a>
-                                            </li>
-                                            <li>
-                                                <a href="co-development" title="Co-Development" class="co-devlpmt">Co-Development</a>
-                                            </li>
-                                            <li class="last">
-                                                <a href="dedicated-development-teams" title="Dedicated Development" class="ded-devlpmt">Dedicated Development Teams</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <!-- <li class="nav-item">
-                                        <a href="#" class="nav-link">Hire Developers
-                                            <i class="fas fa-caret-down ml-2"></i>
-                                        </a>
-                                        <ul class="sub_menu">
-                                            <li>
-                                                <a class="php" title="php" href="hire-developers/hire-php-developers">Hire PHP Developers</a>
-                                            </li>
-                                            <li>
-                                                <a class="xamarin" href="hire-developers/hire-xamarin-developers">Hire Xamarin Developers</a>
-                                            </li>
-                                            <li>
-                                                <a class="java" title="java" href="hire-developers/hire-java-developers">Hire Java Developers</a>
-                                            </li>
-                                            <li>
-                                                <a class="dotnet" title=".Net" href="hire-developers/hire-dotnet-developers">Hire .NET Developers</a>
-                                            </li>
-                                            <li>
-                                                <a class="rectnative" title="SharePoint" href="hire-developers/hire-react-native-developers">Hire React Native Developers</a>
-                                            </li>
-                                            <li>
-                                                <a class="android" title="Android" href="hire-developers/hire-android-developers">Hire Android Developers</a>
-                                            </li>
-                                            <li>
-                                                <a class="nodejs" href="hire-developers/hire-nodejs-developers" title="Node JS">Hire Node.JS Developers</a>
-                                            </li>
-                                            <li>
-                                                <a class="ios" href="hire-developers/hire-ios-developers" title="IOS">Hire iOS Developers</a>
-                                            </li>
-                                            <li>
-                                                <a class="angularjs" href="hire-developers/hire-angularjs-developers" title="Angular JS">Hire AngularJS Developers</a>
-                                            </li>
-                                            <li>
-                                                <a class="laravel" href="hire-developers/hire-laravel-developers">Hire Laravel Developers</a>
-                                            </li>
-
-                                            <li>
-                                                <a class="block_chain" href="hire-developers/hire-blockchain-developers"> Hire Blockchain Developers </a>
-                                            </li>
-
-                                            <li>
-                                                <a class="augmented_ar" href="hire-developers/hire-augmented-reality-developers">Hire Augmented Reality Developers</a>
-                                            </li>
-
-
-                                            <li>
-                                                <a class="phython" href="hire-developers/hire-python-developers"> Hire Python Developers </a>
-                                            </li>
-
-                                            <li>
-                                                <a class="reactjs" href="hire-developers/hire-reactjs-developers">Hire ReactJS Developers</a>
-                                            </li>
-                                        </ul>
-                                    </li> -->
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Industries
-                                            <i class="fas fa-caret-down ml-2"></i>
-                                        </a>
-                                        <ul class="sub_menu">
-                                            <li>
-                                                <a class="isvs" title="isvs &amp; Product Companies" href="industries/isv-software-development-services">ISVs &amp; Product Companies</a>
-                                            </li>
-                                            <li>
-                                                <a class="digital" title="Digital &amp; Marketing Agencies" href="industries/agencies-software-development-services">Digital &amp; Marketing Agencies</a>
-                                            </li>
-                                            <li>
-                                                <a class="banking" title="Banking &amp; Finance" href="industries/banking-financial-services">Banking &amp; Finance</a>
-                                            </li>
-                                            <li>
-                                                <a class="retail" title="Retail &amp; eCommerce" href="industries/retail-ecommerce-software-development">Retail &amp; eCommerce</a>
-                                            </li>
-                                            <li>
-                                                <a class="health" title="Healthcare" href="industries/healthcare-software-development-services">Healthcare</a>
-                                            </li>
-                                            <li>
-                                                <a class="edu" title="Education &amp; E-Learning" href="industries/education-elearning-software-development">Education &amp; E-Learning</a>
-                                            </li>
-                                            <li>
-                                                <a class="manufacturing" href="industries/manufacturing" title="manufacturing">Manufacturing</a>
-                                            </li>
-                                            <li>
-                                                <a class="logistics" href="industries/logistics-transportation-software-development" title="logistics-transportation-software-development">Logistics &amp; Transportation</a>
-                                            </li>
-                                            <li>
-                                                <a class="publishing" href="industries/publishing" title="Publishing">Publishing</a>
-                                            </li>
-                                            <!--<li><a class="ror" href="hire-developers/hire-ror-developers">Hire ROR Developers</a></li>-->
-                                            <li>
-                                                <a class="media_1" title="Media &amp; Entertainment" href="industries/media-software-development-services">
-                                                    Media &amp; Entertainment</a>
-                                            </li>
-                                            <li>
-                                                <a class="atomative" title="Automotive" href="industries/automotive-companies-software-development-services">Automotive</a>
-                                            </li>
-                                            <li>
-                                                <a class="travel" title="Travel &amp; Tourism" href="industries/travel-tourism-software-development-services">Travel &amp; Tourism</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a title="About US" href="about" class="nav-link"> About US</a>
-                                    </li>
-                                    <!-- <li class="nav-item">
-                                        <a href="#" class="nav-link">Company
-                                            <i class="fas fa-caret-down ml-2"></i>
-                                        </a>
-                                        <ul class="sub_menu">
-                                            <li class="first">
-                                                <a title="About US" href="about"> About US</a>
-                                            </li>
-
-                                            <li>
-                                                <a title="Blog" href="https://www.Inextgenit.com/blog/" target="_blank">Blog</a>
-                                            </li>
-                                            <li>
-                                                <a class="faq-menu" title="FAQ's" href="faq"> FAQ</a>
-                                            </li>
-                                            <li>
-                                                <a class="testml-menu" title="CLIENT TESTIMONIALSs" href="testimonials">CLIENT TESTIMONIALS</a>
-                                            </li>
-                                            <li>
-                                                <a class="cases-menu" title="Case Studies" href="case-studies"> Case Studies</a>
-                                            </li>
-                                            <li class="last">
-                                                <a class="approach-menu" title="approach" href="our-approach"> Approach</a>
-                                            </li>
-                                        </ul>
-                                    </li> -->
-                                    <!-- <li class="nav-item">
-                                        <a href="#" class="nav-link">BLOG
-                                            <i class="fas fa-caret-down ml-2"></i>
-                                        </a>
-                                        <ul class="sub_menu">
-                                            <li>
-                                                <a href="">Blog Grid</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Blog Grid Classic</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Blog Grid Sidebar</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Blog List</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Blog List Sidebar</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Blog Post</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">SHOP
-                                            <i class="fas fa-caret-down ml-2"></i>
-                                        </a>
-                                        <ul class="sub_menu">
-                                            <li>
-                                                <a href="">Grid Style 3 Col</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Grid Style 4 Col</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Classic Style 3 Col</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Classic Style 3 Col</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Shop Single</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Shop Cart</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">PAGES
-                                            <i class="fas fa-caret-down ml-2"></i>
-                                        </a>
-                                        <ul class="sub_menu">
-                                            <li>
-                                                <a href="">FAQ 01</a>
-                                            </li>
-                                            <li>
-                                                <a href="">FAQ 02</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Error 404</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Under Construction</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">ELEMENTS
-                                            <i class="fas fa-caret-down ml-2"></i>
-                                        </a>
-                                        <ul class="sub_menu">
-                                            <li>
-                                                <a href="">Feature Boxes</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Pricing Lists</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Testimonials</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Progress Bars</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Accordians</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Responsive Vedios</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">CONTACT
-                                            <i class="fas fa-caret-down ml-2"></i>
-                                        </a>
-                                        <ul class="sub_menu">
-                                            <li>
-                                                <a href="">Contact Us 01</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Contact Us 02</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Contact Us 03</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Contact Us 04</a>
-                                            </li>
-                                        </ul>
-                                    </li> -->
-                                </ul>
-                            </div>
-                        </nav>
+                    <div class="col-md-6">
+                        <div class="py-5 head_txt text-white pt-md-5 mt-md-5">
+                            <h1>Go ahead. Forget
+                                <br>your passwords.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                <br>elit.Voluptatem facilis facere esse magnitconsequatur.
+                                <br>lorem sit amet constructor.</p>
+                            <button class="btn btn-outline-primary text-white btn-lg px-5 my-1 my-md-0">Get Started</button>
+                            <button class="btn btn-outline-primary text-white btn-lg px-5 my-1 my-md-0">Get Connect</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-none d-md-block">
+                            <img src="https://www.vaptech.in/wp-content/uploads/2016/04/responsive.png" alt="" class="w-100">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-    <div class="header_section" style="background-attachment: fixed;">
+    <div class="free_start py-5" style="background: #6760fb;" id="aboutus">
         <div class="container">
-            <div class="row p-0 p-md-5">
-                <div class="col-md-12 p-0 p-md-4">
-                    <div class="text-center p-0 p-md-5">
-                        <h1 class="text-white font-weight-bold my-4 text-center">IT Outsourcing Company For
-                            <br> Offshore Software Development Services </h1>
-                        <p class="text-white my-4">The first rule of any technology used in a business is that automation applied to an efficient operation
-                            will magnify the efficiency. The second is that automation applied to an inefficient operation
-                            will magnify the inefficiency.
-                        </p>
-                        <button class="btn">Contact Us</button>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-white p-md-5 p-2">
+                        <h3>
+                            <strong>About Us</strong>
+                        </h3>
+                        <hr class="line bg-white">
+                        <p>Since our inception in 2004 , Inextgen has been delivering IT Outsourcing services worldwide. We
+                            combine business domain knowledge, proven methodologies, and technology expertise of 450+ skilled
+                            software professionals to yield high quality solutions that add value to businesses. From Startups
+                            to Enterprises, Products Companies to Digital Agencies and SMEs to Governments, we cater to them
+                            all for their diverse technology requirements.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-2 p-md-5 mt-4">
+                        <div class="d-none d-md-block">
+                            <img src="http://vcareall.com/wp-content/uploads/2015/04/about1.png" alt="" class="w-100">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <section class="thumbnails py-5">
+    <div class="thumbnails py-5" id="ourservices">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center py-4 text_small">
-                        <h6 class="text-danger">Gain a Success With Us!</h6>
-                        <h2 class="text-capitalize"> our services </h2>
-                        <div class="section-heading-line"></div>
-                        <p class="text-secondary my-3">Our offshore software development services are geared to deliver results that you expect from outsourcing
-                            IT services to India. Truthfulness, transparency and collaborative approach is a start! </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="service-block">
-                        <img src="img/service-1b.jpg" alt="">
-                        <div class="clearfix">
-
-                            <div class="service-block-title">
-                                <h5 class="text-capitalize">
-                                    <a href="">WEB / MOBILE </a>
-                                </h5>
-                            </div>
-                        </div>
-                        <p class="text-secondary">We deliver build high quality software development services for both web & mobile leveraging the
+                <h2 class="text-center d-block w-100">
+                    <strong>Our Services</strong>
+                </h2>
+                <hr class="line m-auto">
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="mb-4 p-5 box">
+                        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/251768-200.png" alt="" width="25%">
+                        <hr class="line">
+                        <h5>
+                            <strong> WEB / MOBILE </strong>
+                        </h5>
+                        <p> We deliver build high quality software development services for both web & mobile leveraging the
                             best platform capabilities and offering premium user-experience. </p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="service-block">
-                        <img src="img/service-2b.jpg" alt="">
-                        <div class="clearfix">
-
-                            <div class="service-block-title">
-                                <h5 class="text-capitalize">
-                                    <a href="">Application Maintenance</a>
-                                </h5>
-                            </div>
-                        </div>
-                        <p class="text-secondary">Sustain your existing software applications & reduce maintenance costs. We help you focus on your
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="mb-4 p-5 box">
+                        <i class="fa fa-copy fa-4x"></i>
+                        <hr class="line">
+                        <h5>
+                            <strong>Application Maintenance</strong>
+                        </h5>
+                        <p> Sustain your existing software applications & reduce maintenance costs. We help you focus on your
                             business and leave the headache of ongoing maintenance to us. </p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="service-block">
-                        <img src="img/service-3b.jpg" alt="">
-                        <div class="clearfix">
-
-                            <div class="service-block-title">
-                                <h5 class="text-capitalize">
-                                    <a href="">app modernization</a>
-                                </h5>
-                            </div>
-                        </div>
-                        <p class="text-secondary">Transform legacy applications to state of art technologies and modern architecture to stay relevant
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="mb-4 p-5 box">
+                        <i class="fa fa-ruler-combined fa-4x"></i>
+                        <hr class="line">
+                        <h5>
+                            <strong>app modernization</strong>
+                        </h5>
+                        <p>Transform legacy applications to state of art technologies and modern architecture to stay relevant
                             and deliver greatest business value</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="service-block">
-                        <img src="img/service-4b.jpg" alt="">
-                        <div class="clearfix">
-
-                            <div class="service-block-title">
-                                <h5 class="text-capitalize">
-                                    <a href="">Development Teams</a>
-                                </h5>
-                            </div>
-                        </div>
-                        <p class="text-secondary">As an IT outsourcing company, we provide reliably dedicated software development teams who have vast
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="mb-2 p-5 box">
+                        <i class="fa fa-code-branch fa-4x"></i>
+                        <hr class="line">
+                        <h5>
+                            <strong> DEVELOPMENT TEAMS </strong>
+                        </h5>
+                        <p> As an IT outsourcing company, we provide reliably dedicated software development teams who have vast
                             experience in latest web and mobile development technologies. </p>
                     </div>
                 </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="service-block">
-                        <img src="img/service-2b.jpg" alt="">
-                        <div class="clearfix">
-
-                            <div class="service-block-title">
-                                <h5 class="text-capitalize">
-                                    <a href="">CO-DEVELOPMENT </a>
-                                </h5>
-                            </div>
-                        </div>
-                        <p class="text-secondary"> Build quality software & accelerate time-to-market with our professional software developers who
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="mb-2 p-5 box">
+                        <i class="fa fa-code fa-4x"></i>
+                        <hr class="line">
+                        <h5>
+                            <strong> CO-DEVELOPMENT </strong>
+                        </h5>
+                        <p> Build quality software & accelerate time-to-market with our professional software developers who
                             are dedicated to meet your specific requirements of the on-going development projects. </p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="service-block">
-                        <img src="img/service-3b.jpg" alt="">
-                        <div class="clearfix">
-
-                            <div class="service-block-title">
-                                <h5 class="text-capitalize">
-                                    <a href="">testing & qa </a>
-                                </h5>
-                            </div>
-                        </div>
-                        <p class="text-secondary">Inextgenit provides hassle free and precise testing services catering to diverse business requirements.
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="mb-2 p-5 box">
+                        <i class="fa fa-question-circle fa-4x"></i>
+                        <hr class="line">
+                        <h5>
+                            <strong>testing &amp; qa</strong>
+                        </h5>
+                        <p>Inextgen provides hassle free and precise testing services catering to diverse business requirements.
                             Our testers are experienced and skilled to meet your specific requirements on diverse technologies
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-
-                </div>
             </div>
         </div>
-    </section>
-
-    <section class="consulting_agency py-5" style="background: #F9F9F9;">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-md-6">
-                    <div>
-                        <h3 class="font-weight-bold">OUR SOFTWARE DEVELOPMENT EXPERTISE </h3>
-                        <div class="section-heading-line-left"></div>
-                        <p class="text-secondary">We provide software development services for various industries along with result-driven project
-                            management and seamless communication. Our solutions yield benefit in Internet-facing, corporate
-                            and hybrid environments with a focus on optimization and expansion no matter the industry they
-                            operate in.
-                        </p>
-                        <div class="row">
-                            <ul class="primary-list col">
-                                <li class="py-1 font-weight-bold">
-                                    <i class="fa fa-check text-danger mr-3"></i>Banking & Finance</li>
-                                <li class="py-1 font-weight-bold">
-                                    <i class="fa fa-check text-danger mr-3"></i>Healthcare </li>
-                                <li class="py-1 font-weight-bold">
-                                    <i class="fa fa-check text-danger mr-3"></i>Retail & Commerce
-                                </li>
-                                <li class="py-1 font-weight-bold">
-                                    <i class="fa fa-check text-danger mr-3"></i>Publishing
-                                </li>
-                                <li class="py-1 font-weight-bold">
-                                    <i class="fa fa-check text-danger mr-3"></i>Digital & Marketing Agencies
-                                </li>
-                                <li class="py-1 font-weight-bold">
-                                    <i class="fa fa-check text-danger mr-3"></i>Logistics & Transportation
-                                </li>
-                            </ul>
-                            <ul class="primary-list col">
-                                <li class="py-1 font-weight-bold">
-                                    <i class="fa fa-check text-danger mr-3"></i>Automotive
-                                </li>
-                                <li class="py-1 font-weight-bold">
-                                    <i class="fa fa-check text-danger mr-3"></i>Travel & Tourism
-                                </li>
-                                <li class="py-1 font-weight-bold">
-                                    <i class="fa fa-check text-danger mr-3"></i>Education & E-learning
-                                </li>
-                                <li class="py-1 font-weight-bold">
-                                    <i class="fa fa-check text-danger mr-3"></i> ISV & Product Companies
-                                </li>
-                                <li class="py-1 font-weight-bold">
-                                    <i class="fa fa-check text-danger mr-3"></i>Manufacturing
-                                </li>
-                                <li class="py-1 font-weight-bold">
-                                    <i class="fa fa-check text-danger mr-3"></i>Media & Entertainment
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="">
-                        <img src="img/home2v.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section class="team_proff py-5">
+    </div>
+    <div class="take_it_every py-4" style="background: #FAFBFD;">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <p class="text-danger font-weight-bold client">IT Outsourcing Services</p>
-                        <h2>Technologies</h2>
-                        <div class="section-heading-line"></div>
+                <div class="col-md-6">
+                    <div>
+                        <img src="http://modstudio.eu/wp-content/uploads/2014/08/responsive_mockup.png" alt="" class="w-100">
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="row my-2 my-md-5 box">
-                        <div class="col-md-6 px-0 pl-md-0">
-                            <div class="partner-img">
-                                <img src="img/partner1.jpg" alt="">
+                    <div class="mt-5 pt-5">
+                        <span class="text-primary">
+                            <strong>Check it</strong>
+                        </span>
+                        <h2 class="font-weight-bold">Take it everywhere</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            <br>Voluptatem, mollitia sequi optio et nulla officiis quas.</p>
+                        <div class="line"></div>
+                        <span class="ml-4 text-primary">
+                            <strong>Set profile</strong>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="industries">
+        <div class="plan text-center py-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center d-block w-100">
+                        <strong>Industries</strong>
+                    </h2>
+                    <hr class="line m-auto">
+                </div>
+            </div>
+        </div>
+        <div class="industries">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box p-5">
+                            <div class="text-center">
+                                <h5 class="font-weight-bold">
+                                    ISVs &amp;
+                                    <span class="text-primary">
+                                        Product Companies
+                                    </span>
+                                    <hr class="line m-auto">
+                                </h5>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="partner-text py-2">
-                                <span>MAJORITY OWNER</span>
-                                <h4 class="my-2">Jennifer Lawrence</h4>
-                                <div class="section-heading-line-left"></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                <img src="img/signature1.png" alt="">
+                            <p>
+                                Enhance ROI & manage daily workflows with Inextgen result driven ISV Software Development Services tailored for your company.
+                                We provide high-quality, high-end digital transformation and technology solutions / services
+                                for businesses engaged in the Independent software vendors & agencies industry.
+                            </p>
+                            <div class="text-center">
+                                <button class="btn btn-primary px-4">Read More</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row my-2 my-md-5 box">
-                        <div class="col-md-6 px-0 pl-md-0">
-                            <div class="partner-img">
-                                <img src="img/partner2.jpg" alt="">
+                    <div class="col-md-4">
+                        <div class="box p-4 py-5">
+                            <div class="text-center">
+                                <h5 class="font-weight-bold">
+                                    Digital &amp;
+                                    <span class="text-primary">
+                                        Marketing Agencies
+                                    </span>
+                                    <hr class="line m-auto">
+                                </h5>
+                            </div>
+                            <p>
+                                Enhance ROI & manage daily workflows with Inextgen result driven Digital Marketing Software Development Services. We offer
+                                a bunch of solutions like Workflow Management apps, Legacy Migration Solutions, Marketing
+                                apps, Interactive websites, Analytic tools etc. Tailored For Digital & Marketing Agencies.
+                            </p>
+                            <div class="text-center">
+                                <button class="btn btn-primary px-4">Read More</button>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="partner-text py-2">
-                                <span>MAJORITY OWNER</span>
-                                <h4 class="my-2">Shoyab Syed</h4>
-                                <div class="section-heading-line-left"></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                <img src="img/signature2.png" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box p-4 py-5">
+                            <div class="text-center">
+                                <h5 class="font-weight-bold">
+                                    Banking &amp;
+                                    <span class="text-primary">
+                                        Finance
+                                    </span>
+                                    <hr class="line m-auto">
+                                </h5>
+                            </div>
+                            <p>
+                                Enhance ROI & manage daily workflows with Inextgen result driven Banking & Finance Software Development Services tailored
+                                for your company. ValueCoders provides their strategic technology consultancies and partners
+                                with financial institutions for designing, developing, deploying and support their critical
+                                applications. Tailored For financial Services & Fintech Companies.
+                            </p>
+                            <div class="text-center">
+                                <button class="btn btn-primary px-4">Read More</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
-
-    <section class="logo_images" style="background: #d21e2b;">
+    </div>
+    <div class="testimonials py-5 mt-5 mb-0" style="background: #FAFBFD;">
         <div class="container">
-            <div class="row py-5">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <p class="text-white font-weight-bold client">IT Outsourcing Services</p>
-                        <h2 class="text-white">Technologies</h2>
-                        <div class="section-heading-line"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row py-5">
-                <div class="col-md-2 col-sm-4">
-                    <div class="partner_logos my-4 my-md-0">
-                        <img src="img/tech1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="partner_logos my-4 my-md-0">
-                        <img src="img/tech2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="partner_logos my-4 my-md-0">
-                        <img src="img/tech3.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="partner_logos my-4 my-md-0">
-                        <img src="img/tech4.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="partner_logos my-4 my-md-0">
-                        <img src="img/tech5.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="partner_logos my-4 my-md-0">
-                        <img src="img/tech6.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="row py-5">
-                <div class="col-md-2 col-sm-4">
-                    <div class="partner_logos my-4 my-md-0">
-                        <img src="img/tech7.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="partner_logos my-4 my-md-0">
-                        <img src="img/tech8.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="partner_logos my-4 my-md-0">
-                        <img src="img/tech9.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="partner_logos my-4 my-md-0">
-                        <img src="img/tech10.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="partner_logos my-4 my-md-0">
-                        <img src="img/tech11.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <div class="partner_logos my-4 my-md-0">
-                        <img src="img/tech12.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="become_client">
-        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center text-white bg_text">
-                        <span class="font-weight-bold mb-4">Gain a Success With Us!</span>
-                        <h1 class="font-weight-bold mb-4">Trusted it vendor since 2004 </h1>
-                        <div class="container">
-                            <h6 class="mb-4">From past 13 years, we have been delivering IT Outsourcing services worldwide. Our business domain
-                                knowledge, proven methodologies, and technology expertise of skilled software professionals
-                                yield high quality solutions that add value to businesses. From Startups to Enterprises,
-                                Products Companies to Digital Agencies and SMEs to Governments, we cater to them all for
-                                their diverse technology requirements. Our cost-effective, professional and proactive service
-                                delivery makes us one of the most sought after software development companies in India. </h6>
-                        </div>
-                        <button class="btn">Become Client</button>
-                    </div>
+                <div class="col-12 text-center">
+                    <h3>
+                        <strong>Trusted by the experts</strong>
+                    </h3>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section class="percentage_business">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-md-6">
-                    <div class="p-0 p-md-4">
-                        <span class="font-weight-bold text-danger">IT Outsourcing Services !</span>
-                        <h4 class="my-2"> OUR SOFTWARE DEVELOPMENT EXPERTISE </h4>
-                        <p class="text-secondary my-3">We provide software development services for various industries along with result-driven project
-                            management and seamless communication. Our solutions yield benefit in Internet-facing, corporate
-                            and hybrid environments with a focus on optimization and expansion no matter the industry they
-                            operate in. </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-0 p-md-5 my-4 my-md-0">
-                        <div class="d-flex justify-content-between mb-2">
-                            <h6 class="mb-0">Sales Services</h6>
-                            <span class="font-weight-bold">25%</span>
-                        </div>
-                        <div class="progress mb-2">
-                            <div class="percentage_red_1"></div>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
-                            <h6 class="mb-0">Online Reputation</h6>
-                            <span class="font-weight-bold">50%</span>
-                        </div>
-                        <div class="progress mb-2">
-                            <div class="percentage_red_2"></div>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
-                            <h6 class="mb-0">Strategic Consulting</h6>
-                            <span class="font-weight-bold">75%</span>
-                        </div>
-                        <div class="progress mb-2">
-                            <div class="percentage_red_3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- <section class="articles pb-4" style="background: #F9F9F9;">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-md-12">
+                <div class="col-12">
                     <div class="text-center">
-                        <span class="font-weight-bold text-danger">Tips & News</span>
-                        <h2>Read Our Latest Articles</h2>
-                        <div class="section-heading-line"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            <br> incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="blog_grid">
-                        <div class="blog_grid_img">
-                            <img src="img/blog-1.jpg" alt="">
-                            <div class="data_box_grid text-light">
-                                <h4>17</h4>
-                                <p class="mb-0">Apr</p>
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p>Lorem ipsum dolor consectetur adipisicing elit. minus quis possimus eos suscipit
+                                        <br>temporibus aliquid nulla repudiandae ipsa corporis ea voluptate
+                                        <br>Lorem get set amet corpus.
+                                    </p>
+                                    <img src="http://www.myteethandgums.com/wp-content/uploads/bb-plugin/cache/Digvijay-Biswas-Testimonial-for-polite-and-considerate-Dentist-in-Nagpur-circle.jpg"
+                                        alt="" class="rounded">
+                                    <p class="mt-3">
+                                        <strong>ShoyabSyed.</strong>
+                                    </p>
+                                    <span>Proffesional WEB Developer</span>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>Lorem ipsum dolor consectetur adipisicing elit. minus quis possimus eos suscipit
+                                        <br>temporibus aliquid nulla repudiandae ipsa corporis ea voluptate
+                                        <br>Lorem get set amet corpus.
+                                    </p>
+                                    <img src="http://www.plpholidays.com/assets/images/testimonial-1.jpg" alt="" class="rounded">
+                                    <p class="mt-3">
+                                        <strong>JenniferLawrence.</strong>
+                                    </p>
+                                    <span>Proffesional UI & UX developer</span>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>Lorem ipsum dolor consectetur adipisicing elit. minus quis possimus eos suscipit
+                                        <br>temporibus aliquid nulla repudiandae ipsa corporis ea voluptate
+                                        <br>Lorem get set amet corpus.
+                                    </p>
+                                    <img src="http://www.charlestonmassagespa.com/wp-content/uploads/2015/03/testimonial-21.jpg" alt="" class="rounded">
+                                    <p class="mt-3">
+                                        <strong>KushwanthKumar.</strong>
+                                    </p>
+                                    <span>Proffesional JAVA Developer</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="blog_grid_text p-4">
-                            <span>BUSINESS</span>
-                            <h5 class="my-2">Advices for young designers</h5>
-                            <ul class="d-flex my-2">
-                                <li class="mr-4">
-                                    <i class="fas fa-calendar-alt mr-2 text-danger"></i>Apr 19, 2018</li>
-                                <li>
-                                    <i class="fas fa-list-ul mr-2 text-danger"></i>Business</li>
-                            </ul>
-                            <p class="text-secondary border-bottom pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard.</p>
-                            <div class="left-holder">
-                                <button class="btn">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="blog_grid">
-                        <div class="blog_grid_img">
-                            <img src="img/blog-2.jpg" alt="">
-                            <div class="data_box_grid text-light">
-                                <h4>18</h4>
-                                <p class="mb-0">Apr</p>
-                            </div>
-                        </div>
-                        <div class="blog_grid_text p-4">
-                            <span>FINANCE</span>
-                            <h5 class="my-2">What Planning Process Needs?</h5>
-                            <ul class="d-flex my-2">
-                                <li class="mr-4">
-                                    <i class="fas fa-calendar-alt mr-2 text-danger"></i>Apr 19, 2018</li>
-                                <li>
-                                    <i class="fas fa-list-ul mr-2 text-danger"></i>Business</li>
-                            </ul>
-                            <p class="text-secondary border-bottom pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard.</p>
-                            <div class="left-holder">
-                                <button class="btn">Read More</button>
-                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="blog_grid">
-                        <div class="blog_grid_img">
-                            <img src="img/blog-3.jpg" alt="">
-                            <div class="data_box_grid text-light">
-                                <h4>19</h4>
-                                <p class="mb-0">Apr</p>
-                            </div>
-                        </div>
-                        <div class="blog_grid_text p-4">
-                            <span>CONSULTING</span>
-                            <h5 class="my-2">Leverage Customer Analytics</h5>
-                            <ul class="d-flex my-2">
-                                <li class="mr-4">
-                                    <i class="fas fa-calendar-alt mr-2 text-danger"></i>Apr 19, 2018</li>
-                                <li>
-                                    <i class="fas fa-list-ul mr-2 text-danger"></i>Business</li>
-                            </ul>
-                            <p class="text-secondary border-bottom pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard.</p>
-                            <div class="left-holder">
-                                <button class="btn">Read More</button>
-                            </div>
-                        </div>
+                <div class="col-12 col-md-2 col-sm-4">
+                    <div class="img_sites py-3 py-md-5 text-center">
+                        <img src="https://s.productreview.com.au/products/images/ec8fb5fb-d0d6-4bda-8c68-bb91719a669e.png" alt="" class="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-sm-4">
+                    <div class="img_sites py-3 py-md-5 text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8hQe_sbxL2plKXjv5i4RHqBp6aJjhxNVbyItOT4_99J68OywH" alt=""
+                            class="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-sm-4">
+                    <div class="img_sites py-3 py-md-5 text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsy6QwGGofLnnfWi4D1rX8zldrzyO8_GjYk7iJfq9niqomqwbH" alt=""
+                            class="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-sm-4">
+                    <div class="img_sites py-3 py-md-5 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Googlelogo.png/1200px-Googlelogo.png" alt="" class="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-sm-4">
+                    <div class="img_sites py-3 py-md-5 text-center">
+                        <img src="https://protectyoungeyes.com/wp-content/uploads/2015/04/2475.new-instagram-text-logo.png" alt="" class="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 col-sm-4">
+                    <div class="img_sites py-3 py-md-5 text-center">
+                        <img src="http://staff.osuosl.org/~bkero/lca2015-web/themes/mozilla/images/mozilla-logo.png" alt="" class="">
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
-
-    <section class="contact_us">
+    </div>
+    <div class="free_start py-5" style="background: #6760fb;">
         <div class="container">
-            <div class="row py-5">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <h2 class="font-weight-bold mb-4">Get in touch</h2>
-                        <p> Request a free consultation and get a no obligation quote for your project</p>
-                        <div class="section-heading-line"></div>
-                    </div>
-                    <div>
-                        <form action="">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="fname" class="font-weight-bold label-default">First Name</label>
-                                        <input type="text" class="form-control form-control-lg input-default" id="fname" placeholder="Full Name">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="lname" class="font-weight-bold label-default">Last Name</label>
-                                        <input type="text" class="form-control form-control-lg input-default" id="lname" placeholder="Last Name">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="email" class="font-weight-bold label-default">Email</label>
-                                        <input type="text" class="form-control form-control-lg input-default" id="email" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="message" class="font-weight-bold label-default">Message</label>
-                                        <input type="text" class="form-control form-control-lg input-default" id="message" placeholder="Message">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlTextarea1" class="font-weight-bold label-default">Example textarea</label>
-                                        <textarea class="form-control input-default" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="row text-center">
-                                <div class="col text-center">
-                                    <button class="btn btn-lg">Contact Us Today</button>
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer style="background: #111111;">
-        <div class="container">
-            <div class="row pt-5">
-                <div class="col col-md-6">
-                    <h4 class="text-white">About Us</h4>
-                    <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    <div class="text_img">
-                        <img src="img/logo-footer.png" alt="" class="my-4">
-                    </div>
-                </div>
-                <div class="col col-md-6">
-                    <h4 class="text-white">Reach Us</h4>
-                    <div class="text-white">
-                        <address>18th floor, Cyber one,
-                            <br> CIDCO exhibition centre,
-                            <br>Sector 30, Vashi, Navi Mumbai 400703
-                        </address>
-                        <p> Ph:+912230018325
-                            <br> +912230018397</p>
-                        <p> Mail Us: info@converseit.net</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row py-5">
+            <div class="row">
                 <div class="col-md-6">
+                    <div class="text-white p-md-5 p-2">
+                        <h3>
+                            <strong>Get started for free</strong>
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, reiciendis? Dolorem eveniet.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-2 p-md-5 mt-4">
+                        <button class="btn btn-light text-primary px-5">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
                     <div>
-                        <h4 class="text-white">Services</h4>
-                        <ul class="sub_menu mb-0">
-                            <li class="first">
-                                <a href="application-development" title="Application Development" class="app-dvl text-secondary">Application Development</a>
+                        <h6>
+                            <strong>Site Map</strong>
+                        </h6>
+                        <hr class="line">
+
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
                             </li>
                             <li>
-                                <a href="application-maintenance" title="Application Maintenance" class="app-mnt text-secondary">Application Maintenance</a>
+                                <a href="">About</a>
                             </li>
                             <li>
-                                <a href="application-modernization" title="Application Modernization" class="app-modz text-secondary">Application Modernization</a>
+                                <a href="">Services</a>
                             </li>
                             <li>
-                                <a href="testing-qa" title="Testing &amp; QA" class="testing-qa text-secondary">Testing &amp; QA</a>
+                                <a href="">Industries</a>
                             </li>
                             <li>
-                                <a href="co-development" title="Co-Development" class="co-devlpmt text-secondary">Co-Development</a>
-                            </li>
-                            <li class="last">
-                                <a href="dedicated-development-teams" title="Dedicated Development" class="ded-devlpmt text-secondary">Dedicated Development Teams</a>
+                                <a href="">Terms of Services</a>
                             </li>
                         </ul>
+                        <br>
+                        <p> © 1999-2018 All rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <h6>
+                            <strong>Address</strong>
+                        </h6>
+                        <hr class="line">
+
+                        <address>3rd floor, The Pavillion,
+                            <br> near Hotel Radha, opp Sadanand hotel,
+                            <br> Pune-Mumbai Highway, Pune 411045</address>
+                        <p>Mail us: info@intentso.com</p>
+                        <p> Contact: 02032600041 / 42
+                            <br> &amp; 020-65322213</p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div>
-                        <h4 class="text-white">Industries</h4>
+                    <h6>
+                        <strong>Contact</strong>
+                    </h6>
+                    <hr class="line">
+                    <form>
                         <div class="row">
-                            <div class="col">
-                                <ul class="sub_menu">
-                                    <li>
-                                        <a class="isvs text-secondary" title="isvs &amp; Product Companies" href="industries/isv-software-development-services">ISVs &amp; Product Companies</a>
-                                    </li>
-                                    <li>
-                                        <a class="digital text-secondary" title="Digital &amp; Marketing Agencies" href="industries/agencies-software-development-services">Digital &amp; Marketing Agencies</a>
-                                    </li>
-                                    <li>
-                                        <a class="banking text-secondary" title="Banking &amp; Finance" href="industries/banking-financial-services">Banking &amp; Finance</a>
-                                    </li>
-                                    <li>
-                                        <a class="retail text-secondary" title="Retail &amp; eCommerce" href="industries/retail-ecommerce-software-development">Retail &amp; eCommerce</a>
-                                    </li>
-                                    <li>
-                                        <a class="health text-secondary" title="Healthcare" href="industries/healthcare-software-development-services">Healthcare</a>
-                                    </li>
-                                    <li>
-                                        <a class="edu text-secondary" title="Education &amp; E-Learning" href="industries/education-elearning-software-development">Education &amp; E-Learning</a>
-                                    </li>
-                                </ul>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
                             </div>
-                            <div class="col">
-                                <ul class="sub_menu">
-                                    <li>
-                                        <a class="manufacturing text-secondary" href="industries/manufacturing" title="manufacturing">Manufacturing</a>
-                                    </li>
-                                    <li>
-                                        <a class="logistics text-secondary" href="industries/logistics-transportation-software-development" title="logistics-transportation-software-development">Logistics &amp; Transportation</a>
-                                    </li>
-                                    <li>
-                                        <a class="publishing text-secondary" href="industries/publishing" title="Publishing">Publishing</a>
-                                    </li>
-                                    <!--<li><a class="ror" href="hire-developers/hire-ror-developers">Hire ROR Developers</a></li>-->
-                                    <li>
-                                        <a class="media_1 text-secondary" title="Media &amp; Entertainment" href="industries/media-software-development-services">
-                                            Media &amp; Entertainment</a>
-                                    </li>
-                                    <li>
-                                        <a class="atomative text-secondary" title="Automotive" href="industries/automotive-companies-software-development-services">Automotive</a>
-                                    </li>
-                                    <li>
-                                        <a class="travel text-secondary" title="Travel &amp; Tourism" href="industries/travel-tourism-software-development-services">Travel &amp; Tourism</a>
-                                    </li>
-                                </ul>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="emailid">Email address</label>
+                                    <input type="email" class="form-control" id="emailid" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div>
-                        <p class="text-secondary">Copyright © 2004 - 2018. All Rights Reserved. Inextgenit.com</p>
-                    </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="2"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
     </footer>
-
+    <script>
+        jQuery(document).ready(function ($) {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 300) {
+                    $('nav').addClass('fixed-top');
+                } else {
+                    $('nav').removeClass('fixed-top');
+                }
+            });
+            $('a').click(function () {
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500);
+                return false;
+            });
+        }(jQuery));
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body a,
+a:hover {
+    text-decoration: none;
+}
+
+.line {
+    background: #0D84C9;
+    width: 140px;
+    height: 4px;
+    display: block;
+    border-radius: 25%;
+    margin: 15px 0;
+}
+
+.top_nav .navbar-brand {
+    font-size: 32px;
+}
+
+.header_section .head_txt h1 {
+    font-size: 48px;
+}
+
+.navbar-brand span {
+    color: #6760fb
+}
+
+.header_section .head_txt p {
+    font-size: 22px;
+}
+
+.plan .btn_shadow {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.box {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials img {
+    width: 120px;
+}
+
+.testimonials .img_sites img {
+    width: 140px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.testimonials .img_sites img:hover {
+    width: 150px;
+}
+
+footer ul li a {
+    color: #aeaeae;
+}
+
+.header_section {
+    padding: 40px 0;
+}
+
+.thumbnails .box {
+    border: 1px dashed #6760fb;
+    min-height: 400px;
+}
+
+.industries .box {
+    min-height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+hr.line {
+    width: 80px;
+    height: 5px;
+    background: #6760fb;
+    border-radius: 0;
+}
+
+hr.line.m-auto {
+    margin: 16px auto !important;
+}
+
+hr.line.bg-white {
+    background: #fff;
+}
+
+.thumbnails .box i,
+.thumbnails .box h5 {
+    color: #6760fb;
+    text-transform: capitalize;
+}
+
+@media(max-width: 576px) {
+    body p {
+        font-size: 14px;
+    }
+    .header_section {
+        padding: 10px 0;
+    }
+    .header_section .head_txt h1 {
+        font-size: 32px;
+    }
+    .header_section .head_txt p {
+        font-size: 18px;
+    }
+    .header_section .head_txt button {
+        font-size: 14px;
+    }
+}
+
+.footer_down {
+    background: #eee;
+}
+
+/*bootstrap re write*/
+
+.btn-outline-primary {
+    border-color: #6760fb;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6760fb;
+    border-color: #6760fb;
+}
+
+.text-primary {
+    color: #6760fb !important;
+}
+
+a:hover {
+    color: #6760fb !important;
+}
+
+.btn-primary {
+    background: #6760fb;
+    border-color: #6760fb;
+}
+
+.btn-primary:hover {
+    background-color: #6760fb;
+    border-color: #6760fb;
+}
