@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+.section_title {
+	color: #6bb80f;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.section_title span {
+	color: #6bb80f;
+	font-size: 45px;
+}
+
+/* .section_title:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 5px;
+	background: #6bb80f;
+	display: inline-block;
+	width: 100%;
+	z-index: -1;
+} */
+.thumbnails .card{
+	border:0;
+	border-top: 5px solid #6bb80f;
+	border-radius: 0;
+}
+footer ul li a {
+	color: #FFFFF6;
+	font-size: 12px;
+}
+
+footer ul li a:hover {
+	color: #FFFFF6;
+}
+
+footer h6 {
+	color: #FFFFF6;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #FFFFF6;
+}
+.icon-circle{
+	width: 100px;
+height: 100px;
+display: flex !important;
+justify-content: center;
+align-content: center;
+align-items: center;
+padding: 0 !important;
+}
+/*--------------Service Page Style starts--------------------*/
+
+.header_section {
+	background-image: url("../../images/Services_header_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.header_section h1 {
+	font-size: 60px;
+	color: #6bb80f;
+}
+
+.header_section p {
+	font-size: 26px;
+}
+
+.carousel-item {
+	height: 480px;
+}
+
+@media(max-width: 576px) {
+	.header_section h1,
+	h2 {
+		font-size: 18px;
+	}
+	.header_section p {
+		font-size: 16px;
+	}
+}
+
+.application_takeover .app_takeover {
+	min-height: 425px;
+}
+
+.application_takeover .app_takeover ul li {
+	background-image: url("../../images/New folder/sio_tick.png");
+	background-repeat: no-repeat;
+	background-position: 0 6px;
+	color: #fff;
+	padding-left: 25px;
+	margin-bottom: 30px;
+	line-height: 24px;
+	font-size: 16px;
+}
+
+.hire_modals .modal_check ul li {
+	background-image: url("../../images/New folder/sio_tick.png");
+	background-repeat: no-repeat;
+	background-position: 0 6px;
+	color: #000;
+	padding-left: 25px;
+	margin-bottom: 18px;
+	line-height: 24px;
+}
+
+.get_in_touch .get_touch {
+	background-image: url("../../images/New folder/form_border.png");
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding: 34px 15px 32px;
+}
+.aboutus{
+	padding: 100px 0;
+}
+.dashed-border{
+	border-bottom: 2px dashed #6bb80f
+}
+/*bootstrap re write*/
+
+.navbar {
+	background: #fff;
+	border-top: 5px solid #6bb80f;
+	height: 70px;
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+	transition: all .3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+	color: #fff;
+	background: #6bb80f;
+}
+
+.carousel-caption {
+	text-align: center;
+	top: 50%;
+	left: 15%;
+	bottom: auto;
+	right: auto;
+	text-align: left;
+	transform: translateY(-50%);
+}
+
+.carousel-caption h3 {
+	background: #6bb80f;
+	padding: 5px 18px;
+	color: #fff;
+	font-size: 45px;
+	font-weight: bolder;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.carousel-caption h5 {
+	background: #fff;
+	padding: 5px 18px;
+	color: #6bb80f;
+	font-size: 25px;
+	display: inline-block;
+}
+
+.btn-outline-primary {
+	border-color: #6bb80f;
+}
+
+.btn-outline-primary:hover {
+	background-color: #6bb80f;
+	border-color: #6bb80f;
+}
+
+.text-primary {
+	color: #6bb80f !important;
+}
+
+a:hover {
+	color: #6bb80f !important;
+}
+
+.btn-primary {
+	background: #6bb80f;
+	border-color: #6bb80f;
+}
+
+.btn-primary:hover {
+	background-color: #6bb80f;
+	border-color: #6bb80f;
+}
