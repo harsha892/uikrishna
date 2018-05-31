@@ -17,7 +17,9 @@
 	color: #6bb80f;
 	font-size: 45px;
 }
-
+.section_title.text-white span{
+	color: #fff;
+}
 /* .section_title:after {
 	content: "";
 	position: absolute;
@@ -36,7 +38,6 @@
 }
 footer ul li a {
 	color: #FFFFF6;
-	font-size: 12px;
 }
 
 footer ul li a:hover {
@@ -126,6 +127,12 @@ padding: 0 !important;
 .dashed-border{
 	border-bottom: 2px dashed #6bb80f
 }
+.bg-green {
+	background: #6bb80f;
+}
+.text-white{
+	color: #fff
+}
 /*bootstrap re write*/
 
 .navbar {
@@ -186,10 +193,6 @@ padding: 0 !important;
 	color: #6bb80f !important;
 }
 
-a:hover {
-	color: #6bb80f !important;
-}
-
 .btn-primary {
 	background: #6bb80f;
 	border-color: #6bb80f;
@@ -198,4 +201,7 @@ a:hover {
 .btn-primary:hover {
 	background-color: #6bb80f;
 	border-color: #6bb80f;
+}
+.fs-larger{
+	font-size: larger
 }
