@@ -23,55 +23,16 @@
 
 <body>
     <header class="bg-dark" id="home">
-        <div class="top_nav px-md-5">
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark px-5">
-                <div class="container">
-                    <a href="" class="navbar-brand text-white">
-                        <strong>Inext
-                            <span class="text-primary">Gen</span>
-                        </strong>
-                    </a>
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarLink" aria-controls="navbarLink" aria-expanded="false">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarLink">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a href="#home" class="nav-link text-white mr-4">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#aboutus" class="nav-link text-white mr-4">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#ourservices" class="nav-link text-white mr-4">Service</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#industries" class="nav-link text-white mr-4">Industries</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#contact" class="nav-link text-white mr-4">Contact</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                            <button class="nav-link bg-primary text-white btn p-0 px-3 py-1">RegisterNow</button>
-                        </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+        <div w3-include-html="shared/navigation.html"></div>
         <div class="header_section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="py-5 head_txt text-white pt-md-5 mt-md-5">
-                            <h1>Go ahead. Forget
-                                <br>your passwords.</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                <br>elit.Voluptatem facilis facere esse magnitconsequatur.
-                                <br>lorem sit amet constructor.</p>
-                            <button class="btn btn-outline-primary text-white btn-lg px-5 my-1 my-md-0">Get Started</button>
-                            <button class="btn btn-outline-primary text-white btn-lg px-5 my-1 my-md-0">Get Connect</button>
+                            <h1>Indian IT Outsourcing Company For
+                                <br>Offshore Software Development Services.</h1>
+                            <p>We’re an Indian software development company focused on just one thing -
+                                <br>offshore software development services. 13+ years in business .
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -127,6 +88,7 @@
                         </h5>
                         <p> We deliver build high quality software development services for both web & mobile leveraging the
                             best platform capabilities and offering premium user-experience. </p>
+                        <a href="application-development.html" class="text-primary">Read More</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4">
@@ -138,6 +100,7 @@
                         </h5>
                         <p> Sustain your existing software applications & reduce maintenance costs. We help you focus on your
                             business and leave the headache of ongoing maintenance to us. </p>
+                        <a href="application-maintenance.html" class="text-primary">Read More</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4">
@@ -149,6 +112,7 @@
                         </h5>
                         <p>Transform legacy applications to state of art technologies and modern architecture to stay relevant
                             and deliver greatest business value</p>
+                        <a href="application-modernization.html" class="text-primary">Read More</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4">
@@ -160,6 +124,7 @@
                         </h5>
                         <p> As an IT outsourcing company, we provide reliably dedicated software development teams who have vast
                             experience in latest web and mobile development technologies. </p>
+                        <a href="" class="text-primary">Read More</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4">
@@ -171,6 +136,7 @@
                         </h5>
                         <p> Build quality software & accelerate time-to-market with our professional software developers who
                             are dedicated to meet your specific requirements of the on-going development projects. </p>
+                        <a href="" class="text-primary">Read More</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4">
@@ -183,6 +149,7 @@
                         <p>Inextgen provides hassle free and precise testing services catering to diverse business requirements.
                             Our testers are experienced and skilled to meet your specific requirements on diverse technologies
                         </p>
+                        <a href="" class="text-primary">Read More</a>
                     </div>
                 </div>
             </div>
@@ -224,7 +191,7 @@
                 </div>
             </div>
         </div>
-        <div class="industries">
+        <div class="thumbnail_box">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -483,6 +450,10 @@
             </div>
         </div>
     </footer>
+    <script src="js/w3data.js"></script>
+    <script>
+        w3.includeHTML();
+    </script>
     <script>
         jQuery(document).ready(function ($) {
             $(window).scroll(function () {

@@ -71,13 +71,16 @@ footer ul li a {
     min-height: 400px;
 }
 
-.industries .box {
+.thumbnail_box .box {
     min-height: 460px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
+.thumbnail_box.appdev .box{
+    min-height: 380px;
+    justify-content: center;
+}
 hr.line {
     width: 80px;
     height: 5px;
@@ -117,6 +120,20 @@ hr.line.bg-white {
     }
 }
 
+.bullet_main li {
+    list-style: none;
+    font: 17px/55px Lato;
+    background: url(images/application_bullet.png) 0 20px no-repeat;
+    padding-left: 28px;
+}
+
+.bullet_main_small li {
+    list-style: none;
+    font: 16px/35px Lato;
+    background: url(images/application_bullet_white.png) 0 12px no-repeat;
+    padding-left: 21px;
+}
+
 .footer_down {
     background: #eee;
 }
@@ -140,9 +157,11 @@ a:hover {
     color: #6760fb !important;
 }
 
-.btn-primary {
+.btn-primary,
+.bg-primary {
     background: #6760fb;
     border-color: #6760fb;
+    background-color: #6760fb !important;
 }
 
 .btn-primary:hover {
