@@ -1,0 +1,663 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+a , a:hover{
+    text-decoration: none;
+}
+
+.link_yellow{
+    color: #000;
+    font-weight: 600;
+}
+
+ .link_yellow:hover {
+    color: #FAB702;
+    transition: .3s;
+}
+
+.underline , .underline:hover{
+
+    text-decoration: underline;
+}
+
+.scroll_top{
+    text-align: right;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.scroll_top i{
+    background: #FAB702;
+    padding: 12px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+header{
+    background-image: url("http://theme.bearsthemes.com/wordpress/dana/wp-content/uploads/2018/01/bg23.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.top_bar_address .text,login{
+    font-size: 13px;
+    color: #000;
+}
+
+.top_bar_address .text p{
+    font-size: 13px;
+}
+
+
+.top_social_links i{
+    padding: 6px;
+    font-size: 12px;
+    background: #FAB702;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    height: 26px;
+    width: 26px;
+    margin: 0 4px;
+    display: inline-block;
+}
+
+.top_social_links i:hover{
+    background: #C79202;
+}
+
+.top_bar_address .menu li{
+    position: relative;
+    font-weight: 500;
+    font-size: 13px;
+    /* margin-left: 8px; */
+}
+.top_bar_address .menu li .nav-link{
+    color: #fff;
+    transition: .3s;
+    display: block;
+    font-size: 16px;
+    margin: 0 8px;
+}
+
+.top_bar_address .menu li .nav-link:hover{
+    color: #FAB702;
+}
+
+.top_bar_address .menu .sub_menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    display: none;
+    white-space: nowrap;
+    background: #fff;
+    padding: 10px;
+
+}
+
+
+.top_bar_address .menu .sub_menu a{
+    color: #777777;
+    transition: .3s;
+    padding: 12px  12em 12px 0;
+    display: block;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.top_bar_address .menu .sub_menu a:hover{
+    color: #FAB702;
+}
+
+.top_bar_address .menu li:hover .sub_menu{
+    display: block;
+    
+}
+
+.header_text {
+    margin-top: 16em;
+}
+
+.header_text p{
+    font-size: 20px;
+}
+
+.header_text h1{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 800;
+}
+
+.header_text h1  span{
+    color: #FAB702;
+    font-size: 60px;
+}
+
+.header_text a{
+    background: #FAB702;
+    padding: 12px 34px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.header_text a:hover{
+    background: #fff;
+    color: #FAB702;
+}
+.ourservice p{
+    font-size: 16px;
+}
+
+.ourservice .service_text h1{
+    font-size: 34px;
+    font-weight: 700;
+}
+.our_works_images{
+    background: #FAB702;
+}
+
+.menu_works a{
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    margin: 0 12px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.menu_works a:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #000;
+    top: 100%;
+    left: 25%;
+    width: 0%;
+    transition: .4s;
+    
+}
+
+.menu_works a:hover:after{
+    width: 50%;    
+}
+
+ .images ul li img{
+    width: 300px;
+    height: 300px;
+     
+ }
+
+ .images ul{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     cursor: pointer;
+ }
+
+ .images ul li{
+    position: relative;
+ }
+
+ .images .center_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(160deg,rgba(250,183,2,0.8) 0%,rgba(250,183,2,0.8) 35%,rgba(255,79,25,0.8) 100%);
+    width: 300px;
+    height: 300px;
+    padding-top: 55px;
+    display: none;
+    transition:all .5s;
+    
+}
+
+.images ul li:hover .center_text{
+    display: block;
+    transition: .5s;
+}
+
+ .images .center_text i{
+     background: #fff;
+     padding: 16px;
+     border-radius: 50%;
+     margin: 0 8px;
+ }
+
+ .images .center_text h3{
+     color: #fff;
+     font-weight: 700;
+     font-size: 28px;
+ }
+
+ .images .center_text a{
+     color: #fff;
+     transition: .3s;
+ }
+ .images .center_text a:hover{
+     color: #FAB702;
+ }
+
+ .our_works_images .more_projects_link  p{
+     font-size: 22px;
+     font-weight: 500;
+ }
+
+ .testimonials .testimonials_text p , div , h5{
+     font-size: 17px;
+ }
+
+ .testimonials_image img{
+     width: 140px;
+     margin: 18px 12px;
+     opacity: .6;
+     transition: .3s;
+ }
+
+ .testimonials_image img:hover{
+     opacity: 1;
+ }
+
+.our_plans{
+    background-image: url("http://theme.bearsthemes.com/wordpress/dana/wp-content/uploads/2017/12/bg10.jpg?id=272");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.our_plans .box_text {
+    color: #fff;
+    text-align: center;
+    height: 600px;
+    margin-top: -50px;
+    background: #1d1d27;
+    border-radius: 24px;  
+    transition: .5s;
+    
+}
+
+.our_plans .box_text:hover{
+    background: #FAB702;
+    color: #1d1d27;
+
+    
+}
+
+
+.our_plans .box_text h5{
+    font-weight: 900;
+    font-size: 24px;
+    margin: 22px 0;
+    line-height: 1;
+}
+
+.our_plans .box_text span i{
+    margin-top: 26px;
+    font-size: 80px;
+    color: #fff;
+}
+
+.our_plans .box_text:hover span i{
+    color: #1d1d27;
+}
+
+.our_plans .box_text h4{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.our_plans .box_text .dollar{
+    font-size: 40px;
+    font-weight: 900;
+}
+.our_plans .box_text ul li{
+    margin: 16px 0;
+    font-size: 15px;
+}
+.our_plans .box_text a{
+    background: #ffffff;
+    padding: 10px 36px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #1f2022;
+    font-weight: 700;
+    transition: .4s;
+}
+
+.our_plans .box_text a:hover{
+    background: #1f2022;
+    color: #ffffff;
+}
+
+.our_plans .plan_text a{
+    background: #FAB702;
+    padding: 12px 42px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    transition: .4s;   
+}
+
+
+.our_plans .plan_text a:hover{
+    background: #1d1d27;
+}
+
+.our_team .profile_text .profile_name{
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.our_team .profile_text a,span{
+    font-size: 14px;
+}
+
+.our_team .profile_text{
+    position: relative;
+}
+
+.our_team .team_profile{
+    position: relative;
+}
+
+.our_team .hover_icons{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: linear-gradient(160deg,rgba(250,183,2,0.8) 0%,rgba(250,183,2,0.8) 35%,rgba(255,79,25,0.8) 100%);
+    width: 100%;
+    height: 69%;
+    transition: .5s;
+    display: none;
+}
+
+.our_team .team_profile:hover .hover_icons{
+    display: block;
+}
+
+.our_team .hover_icons i{
+    background: #fff;
+    color: #000;
+    padding: 12px;
+    margin-top: 50%;
+    border-radius: 50%;
+}
+
+.vedio_present .row{
+    background-image: url("http://theme.bearsthemes.com/wordpress/dana/wp-content/uploads/2017/12/bg11.jpg?id=276");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.vedio_present .vedio_text h1{
+    margin-top: 3.5em;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+.vedio_present .vedio_text h1 span{
+    color: #FAB702;
+    font-size: 2.5rem;
+}
+
+.vedio_present .vedio_text a{
+    background: #FAB702;
+    padding: 14px 42px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    transition: .4s;
+    border-radius: 4px;  
+}
+
+.vedio_text a:hover{
+    background: #1d1d27;
+}
+
+.blog_news ul li ,p{
+    font-size: 14px;
+}
+
+.blog_news .blog_img{
+    width: 100%;
+    overflow: hidden;
+   
+}
+
+.blog_news .blog_img img{
+    width: 100%;
+}
+
+.blog_news .blog_img img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    
+    
+}
+
+.wordpress{
+    background-image: url("http://theme.bearsthemes.com/wordpress/dana/wp-content/uploads/2017/12/bg9.jpg?id=237");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 600px; */
+    width: 100%;
+}
+
+.wordpress_text h5{
+    font-size: 20px;
+}
+
+.wordpress .wordpress_text span,p{
+    font-size: 17px;
+}
+
+.wordpress_text span i{
+    background: #d9d9d9;
+    padding: 16px;
+    border-radius: 50%;
+    margin: 0 12px;
+    transition: .4s;
+    
+}
+.wordpress_text .support_team:hover span i, .performance:hover span i{
+    background: #FAB702;
+    color: #fff;
+    
+}
+
+.wordpress_img img:hover{
+    box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+.get_in_touch{
+    background-image: url("http://theme.bearsthemes.com/wordpress/dana/wp-content/uploads/2017/12/bg7.jpg?id=59");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.get_in_touch .user_message h3{
+    font-size: 38px;
+}
+
+.get_in_touch .user_message input{
+    width: 48%;
+    padding: 8px;
+    color: #1d1d27;
+    border: none;
+    background: #cacaca;
+}
+
+.user_message .message textarea{
+    background: #cacaca;
+}
+
+.get_in_touch  input:focus , textarea:focus{
+    background: #fff;
+}
+
+.user_message .submit_btn{
+    background: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 2px;
+    padding: 20px 12em;
+    margin: 12px 0;
+    color: #1d1d27;
+    display: inline-block;
+    transition: .3s;
+}
+.user_message .submit_btn:hover{
+    background: #cacaca;;
+}
+
+.get_in_touch .office_addr{
+    background: #FAB702;
+    margin-top: 10em;
+    
+}
+
+.office_addr h5{
+    font-size: 26px;
+}
+
+.get_in_touch .office_addr ul li{
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+footer{
+    background: #202020;
+}
+
+footer .about_dana ul li i{
+    background: #FAB702;
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+footer p{
+    font-size: 16px;
+}
+
+footer ul li{
+    font-size: 15px;
+    margin: 12px 0;
+}
+
+footer .custom_links ul li a{
+    color: #fff;
+    font-weight: 500;
+    transition: .3s;
+}
+
+footer .custom_links span{
+    width: 10px;
+    height: 2px;
+    margin: 0 8px;
+    display: inline-block;
+    background: #FAB702;
+}
+
+footer .custom_links ul li a:hover{
+    color: #FAB702;
+}
+
+footer .follow_me ul li a{
+    color: #fff;
+    transition: .3s;
+}
+
+footer .follow_me ul li a:hover{
+    color: #FAB702;
+   
+}
+
+footer .recent_news img{
+    width: 100px;
+}
+
+footer .recent_news .bdg{
+    background: #FAB702;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0px 4px;
+}
+
+footer .recent_news ul li{
+    margin: 4px 0;
+}
+
+footer .recent_news ul li a{
+    color: #fff;
+    transition: .3s;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+footer .recent_news ul li a:hover{
+    color: #FAB702;
+}
+
+.footer_down{
+    background: #151515;
+}
+
+.footer_down ul li a{
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 12px;
+    font-weight: 500;
+    color: #fff;
+    transition: .3s;
+}
+
+.footer_down ul li a:hover{
+    color: #FAB702; 
+}
+
+.footer_down .copyright{
+    font-size: 15px;
+}
+.footer_down .copyright a{
+    color: #fff;
+    transition: .3s;
+    font-weight: 500;
+}
+.footer_down .copyright a:hover{
+    color: #FAB702; 
+}
+
+@media(max-width: 576px){
+    .header_text {
+        margin-top: 0;
+    }
+}

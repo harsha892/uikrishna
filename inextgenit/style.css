@@ -70,6 +70,9 @@ footer ul li a {
     border: 1px dashed #6760fb;
     min-height: 400px;
 }
+.thumbnails .box-sm{
+    min-height: 470px;
+}
 
 .thumbnail_box .box {
     min-height: 460px;
